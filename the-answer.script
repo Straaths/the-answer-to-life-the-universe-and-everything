@@ -1,0 +1,13 @@
+SECOND = 1;
+MINUTE = 60;
+person = new Person('Me');
+person.setMaximumThinkingTime(MINUTE);
+while(person.isAlive()){
+  if(person.do(person.think()) == 💩){
+    person.increaseMaximumThinkingTime(MINUTE + SECOND);
+  }else{
+   person.share();
+  }
+  person.decreaseMaximumThinkingTime(SECOND);
+}
+person.restInPeace();
